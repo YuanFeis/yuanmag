@@ -1,0 +1,16 @@
+http://localhost:8082/order/add
+Content-Type:application/json
+
+GET请求
+/add/{userID}/{mobile}/{status}/{remark}/{content}
+
+/order/add/6/123456/准备中/多加辣/鸡翅火腿
+
+http://localhost:8082/order/add/6/123456/准备中/多加辣/鸡翅火腿
+
+
+POST请求
+
+{"userID":"6","mobile":"123456","status":"准备中","remark":"多加辣","content":{"list":[{"id":1,"name":"翅桶","amount":1,"price":39},{"id":2,"name":"双堡翅尖桶","amount":2,"price":156},{"id":3,"name":"川香燃辣撸串桶","amount":3,"price":177}]}}
+
+这个文件没有用，测试时留下来的
